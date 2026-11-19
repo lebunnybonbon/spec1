@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background: #e6e2d3;
+  overflow: hidden;
+}
+
+.home-button {
+  position: fixed;
+  z-index: 20;
+  top: 22px;
+  right: 28px;
+  padding: 8px 13px;
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font: 11px "Courier New", monospace;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.home-button:hover { background: #111; color: #fff; }
+
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#sketch-holder canvas {
+  display: block;
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0;
+  /* box-shadow: 0 12px 28px rgba(28, 39, 49, 0.18); */
+}
+
+#trash-image {
+  position: fixed;
+  right: 1.5625vw;
+  left: auto;
+  bottom: 0;
+  width: 18.75vw;
+  height: 36.1111vh;
+  object-fit: cover;
+  object-position: center bottom;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+  main {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  #sketch-holder canvas {
+    box-shadow: none;
+  }
+}

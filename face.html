@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inverted Layer / Generative Experiment</title>
+    <link rel="stylesheet" href="face.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>INVERTED LAYER / GENERATIVE EXPERIMENT</h1>
+      <p class="description">
+        Layer 1 là ảnh gốc. Các ô vuông ngẫu nhiên sẽ lộ layer 2 đã đảo màu.
+      </p>
+
+      <div class="controls">
+        <label class="upload-button" for="image-input">Chọn hình ảnh</label>
+        <button id="live-button" class="upload-button" type="button">
+          Live camera
+        </button>
+        <button id="fullscreen-button" class="upload-button" type="button">
+          Fullscreen
+        </button>
+      </div>
+      <input id="image-input" type="file" accept="image/*" />
+
+      <p id="status" class="status">Chưa có nguồn hình ảnh.</p>
+      <p id="tile-count" class="tile-count"></p>
+
+      <div id="face-canvas"></div>
+    </main>
+
+    <script src="face.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+html,
+body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #000; }
+.wrap-image { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; object-fit: cover; object-position: center; }
+.artboard-layer { z-index: 0; }
+.bubble-layer { z-index: 2; opacity: 1; }
+#asset-layers { position: fixed; z-index: 1; inset: 0; width: 100vw; height: 100vh; pointer-events: none; }
+.asset-layer { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: 1; opacity: 0; transition: opacity 70ms linear; }
+.home-button { position: fixed; z-index: 20; top: 22px; right: 28px; padding: 8px 13px; border: 1px solid #111; background: #fff; color: #111; text-decoration: none; font: 11px "Courier New", monospace; letter-spacing: .06em; text-transform: uppercase; }
+.home-button:hover { background: #111; color: #fff; }

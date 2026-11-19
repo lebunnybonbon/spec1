@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.home-button {
+  position: fixed;
+  top: 22px;
+  right: 28px;
+  z-index: 5;
+  padding: 8px 13px;
+  border: 1px solid #111;
+  color: #111;
+  background: #fff;
+  font: 11px "Courier New", monospace;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.home-button:hover {
+  color: #fff;
+  background: #111;
+}
+
+#pixelCanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  cursor: grab;
+  touch-action: none;
+}
+
+.title {
+  position: fixed;
+  top: 24px;
+  left: 28px;
+  z-index: 2;
+  color: #111;
+  font-family: "Handjet", sans-serif;
+  font-size: clamp(52px, 7vw, 96px);
+  font-weight: 500;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.title span {
+  display: inline-block;
+  color: #111;
+  -webkit-text-stroke: 0.8px #111;
+  transition: none;
+}
+
+.title span.is-light {
+  color: #fff;
+}
+
+#pixelCanvas.is-dragging {
+  cursor: grabbing;
+}
